@@ -1,0 +1,38 @@
+<!doctype html>
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+
+    <title>Pong</title>
+    <meta name="description" content="M4: Pong game controlled via Web Bluetooth accelerometer and gyro">
+    <meta name="author" content="Tim Kanarsky">
+    <!-- adopted from https://developer.mozilla.org/en-US/docs/Games/Tutorials/2D_Breakout_game_pure_JavaScript/Create_the_Canvas_and_draw_on_it -->
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        canvas {
+            background: #eee;
+            display: block;
+            margin: 0 auto;
+        }
+        
+        /* center button and pad it 100px on all sides */
+        #connect-button {
+            display: block;
+            margin: 50px;
+        }
+    </style>
+</head>
+
+<body>
+    <button id="connect-button">Connect to Arduino</button>
+    <canvas id="pong-canvas" height="480" width="640"></canvas>
+    <script src="game.js" type="module"></script>
+</body>
+
+</html>
